@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#457FF1"
+    tools:context="com.example.tactalk.EndGameFragment">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/Stats"
+            android:layout_width="140dp"
+            android:layout_height="81dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:text="@string/StatsButton"
+            app:backgroundTint="#000102"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.866"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.937" />
+
+        <Button
+            android:id="@+id/Back"
+            android:layout_width="139dp"
+            android:layout_height="81dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="@string/BackButton"
+            app:backgroundTint="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.147"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.936" />
+
+        <Button
+            android:id="@+id/Home"
+            android:layout_width="156dp"
+            android:layout_height="99dp"
+            android:text="@string/HomeButton"
+            app:backgroundTint="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.681" />
+
+        <TextView
+            android:id="@+id/EndGameBanner"
+            android:layout_width="257dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="132dp"
+            android:background="#1446F4"
+            android:gravity="center_horizontal"
+            android:text="@string/GameOver"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toTopOf="@+id/Home"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.259" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="155dp"
+            android:layout_height="131dp"
+            android:layout_marginTop="13dp"
+            android:src="@drawable/logo_test"
+            app:layout_constraintBottom_toTopOf="@+id/Home"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/EndGameBanner" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

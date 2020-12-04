@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#457FF1"
+    tools:context="com.example.tactalk.StatsFragment">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="178dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/TeamB"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/Time"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintVertical_bias="0.746" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="177dp"
+            android:layout_height="136dp"
+            android:src="@drawable/logo_test"
+            app:layout_constraintBottom_toTopOf="@+id/Home"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.147"
+            app:srcCompat="@drawable/logo_test"
+            tools:srcCompat="@drawable/logo_test" />
+
+        <Button
+            android:id="@+id/Stats"
+            android:layout_width="140dp"
+            android:layout_height="81dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:text="@string/EndHalf"
+            app:backgroundTint="#000102"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.866"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.937" />
+
+        <Button
+            android:id="@+id/Stop"
+            android:layout_width="139dp"
+            android:layout_height="81dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="@string/Pause"
+            app:backgroundTint="#FF0505"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.147"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.936" />
+
+        <Button
+            android:id="@+id/Home"
+            android:layout_width="156dp"
+            android:layout_height="99dp"
+            android:text="@string/Start"
+            app:backgroundTint="#22EC4C"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.708" />
+
+        <TextView
+            android:id="@+id/Time"
+            android:layout_width="192dp"
+            android:layout_height="55dp"
+            android:background="#FFFFFF"
+            android:text="@string/startTime"
+            android:textColor="#F30707"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toTopOf="@+id/Home"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            />
+
+        <TextView
+            android:id="@+id/firsthalf"
+            android:layout_width="68dp"
+            android:layout_height="21dp"
+            android:layout_marginBottom="48dp"
+            android:text="@string/FirstHalf"
+            android:textColor="#F8F8F8"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/Home"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Time"
+            app:layout_constraintVertical_bias="0.909"
+            android:textAlignment="center"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="178dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/TeamA"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/Time"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintVertical_bias="0.061" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
